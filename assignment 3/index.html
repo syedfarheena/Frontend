@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wipro Job Application Form</title>
 </head>
 <body>
-    <h1>hii</h1>
+    <h1>Wipro Job Application Form</h1>
+    <form action="/submit" method="POST">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="position">Position Applied For:</label>
+        <select id="position" name="position" required>
+            <option value="software-engineer">Software Engineer</option>
+            <option value="data-analyst">Data Analyst</option>
+            <option value="project-manager">Project Manager</option>
+        </select><br><br>
+
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" required><br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+        <label for="message">Why should we hire you?</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+    </form>
 </body>
 </html>
