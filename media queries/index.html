@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        body {
+            background-color: brown;
+            font-size: medium;
+        }
+        @media(min-width: 500px){
+            h1 {
+                background-color: aquamarine;
+                font-size: 20px;
+            }
+        }
+        @media(max-width: 600px){
+            h1{
+                background-color: blueviolet;
+                font-size: 20px;
+            }
+        }
+        @media(orientation:portrait){
+            p{
+               background-color: bisque;
+            }
+        }
+        @media(orientation:landscape){
+            p{
+               background-color: chartreuse;
+            }
+        }
+
+            
+    </style>
+</head>
+<body>
+    <h1>Hyper Text Markup Language, used for creating web pages</h1>
+    <p>Cascading Sytle Sheets, used for designing and styling web pages</p>
+</body>
+</html>
